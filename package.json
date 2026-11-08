@@ -1,0 +1,12 @@
+{
+  "name": "camille-soret-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "start": "node --env-file=.env server/server.js",
+    "create-admin-hash": "node server/create-admin-hash.js"
+  }
+}

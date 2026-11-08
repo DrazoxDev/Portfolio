@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camille Soret | Développeur web junior — Portfolio</title>
+    <meta id="page-description" name="description"
+        content="Portfolio de Camille Soret, étudiant en BUT MMI parcours développement web. Découvrez ses projets, compétences front-end, back-end et mobile.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#f3f1e9">
+    <link id="canonical-url" rel="canonical" href="">
+    <meta id="og-title" property="og:title" content="Camille Soret | Développeur web junior — Portfolio">
+    <meta id="og-description" property="og:description" content="Portfolio de Camille Soret, étudiant en BUT MMI parcours développement web. Découvrez ses projets, compétences front-end, back-end et mobile.">
+    <meta id="og-url" property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta id="og-image" property="og:image" content="/images/photo-profil.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="twitter-title" name="twitter:title" content="Camille Soret | Développeur web junior — Portfolio">
+    <meta id="twitter-description" name="twitter:description" content="Portfolio de Camille Soret, étudiant en BUT MMI parcours développement web. Découvrez ses projets, compétences front-end, back-end et mobile.">
+    <script id="portfolio-schema" type="application/ld+json">{}</script>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="light-mode">
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a class="nom" data-site="name" href="/">Camille SORET</a>
+                <div class="nav-controls">
+                    <div class="theme-toggle-container">
+                        <label class="theme-toggle" for="themeToggle">
+                            <input type="checkbox" id="themeToggle" class="theme-checkbox">
+                            <span class="theme-slider">
+                                <span class="theme-icon sun">☀️</span>
+                                <span class="theme-icon moon">🌙</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li class="deroulant">
+                        <a href="/">Accueil ⏷</a>
+                        <ul class="sous">
+                            <li><a href="#presentation">Présentation</a></li>
+                            <li><a href="#competences_techniques">Compétences en développement web</a></li>
+                            <li><a href="#projets">Projets</a></li>
+                            <li><a href="#portrait_chinois">Portrait chinois</a></li>
+                            <li><a href="#influences">Influences</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="deroulant">
+                        <a href="projets.html">Projets ⏷</a>
+                        <ul class="sous" id="projets-menu">
+                            <!-- Le menu des projets sera généré dynamiquement -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="update-banner" id="updateBanner" hidden>
+            <span class="typewriter-text"></span>
+            <button class="close-btn" id="closeBannerBtn">✖</button>
+        </div>
+
+        <script src="/scripts/banniere.js"></script>
+
+        <section id="presentation" class="presentation">
+            <img src="/images/bg-presentation.webp" alt="Arbre de fond" class="bg">
+            <p class="hero-kicker" data-site="kicker">CAMILLE SORET <span>·</span> BUT MMI 3 <span>·</span> PARCOURS DÉVELOPPEMENT</p>
+            <h1 data-site="headline">Je conçois et développe<br>des expériences web.</h1>
+
+            <div class="presentation-layout">
+                <div class="card">
+                    <img src="/images/photo-profil.webp" alt="Portrait de Camille Soret">
+                    <h3 data-site="name">Camille SORET</h3>
+                    <p data-site="cardSubtitle">Étudiant en 3e année de BUT MMI</p>
+                    <hr>
+                    <p data-site="cardFocus">Parcours développement</p>
+                </div>
+
+                <div class="description">
+                    <p class="hero-statement" data-site="statement">Du besoin à l’interface, puis jusqu’aux données.</p>
+                    <p data-site="biography">Je m’appelle Camille, étudiant en troisième année de BUT Métiers du Multimédia et de l’Internet,
+                        parcours développement web. J’aime transformer une idée en produit concret : structurer les
+                        données, construire une interface claire et soigner ce qui se passe derrière. Mes projets m’ont
+                        fait pratiquer le développement web et mobile, en équipe comme en autonomie. J’ai abordé
+                        React, Laravel, Flutter et Symfony au fil de mes projets : certains outils me sont déjà
+                        familiers, d’autres sont encore en cours d’apprentissage.</p>
+                    <div class="hero-actions">
+                        <a class="hero-link hero-link-primary" href="#projets">Voir mes projets <span aria-hidden="true">↗</span></a>
+                        <a class="hero-link" href="#competences_techniques">Mes compétences</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="traits-caption" data-site="traitsCaption">Ma façon d’avancer, en cinq mots — choisis-en un</p>
+            <div class="menu" id="menu" aria-label="Traits de personnalité"></div>
+            <div class="message" id="trait-message" aria-live="polite">
+                <p>Je suis assidu parce que j'aime mener chaque tâche à son terme avec rigueur et efficacité.</p>
+            </div>
+        </section>
+
+
+        <section id="competences_techniques" class="competences_techniques">
+            <p class="section-kicker">02 <span>/</span> DU FRONT AU BACK</p>
+            <h2>Mes outils de développement</h2>
+            <p class="section-intro">Un parcours qui va de l’interface au serveur, avec du mobile, des données et tout le travail d’équipe autour.</p>
+
+            <div class="competences-progress" id="skills-list"></div>
+        </section>
+
+
+        <section id="projets" class="projets">
+            <p class="section-kicker">03 <span>/</span> APPRENDRE EN FAISANT</p>
+            <h2 class="titre-projets">Des idées aux projets</h2>
+            <p class="section-intro">Applications, interfaces et expériences interactives : chaque projet m’a appris à transformer un besoin en solution concrète.</p>
+
+            <div class="projets-container">
+                <div class="projet-carousel">
+                    <button class="carousel-btn prev" type="button" aria-label="Projet précédent">
+                        <span class="carousel-arrow">‹</span>
+                    </button>
+
+                    <div class="projet-card-carousel">
+                        <div class="projet-image-carousel">
+                            <img id="home-project-image" src="/images/UrComunity.webp" alt="Projet UrComunity de Camille Soret">
+                        </div>
+                        <div class="projet-content-carousel">
+                            <div class="tags" id="home-project-tags">
+                                <span class="tag">Apps</span>
+                                <span class="tag">Social</span>
+                            </div>
+                            <p class="description" id="home-project-summary">Une application pensée pour créer des amitiés, pas des matchs. Un projet d’équipe où l’idée, l’identité et la stratégie ont compté autant que le produit.</p>
+                            <a id="home-project-link" href="/projets/urcomunity/" class="voir-plus">Découvrir le projet <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn next" type="button" aria-label="Projet suivant">
+                        <span class="carousel-arrow">›</span>
+                    </button>
+                </div>
+
+                <div class="projet-indicator">
+                    <span class="indicator-text">1 / 5</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="portrait_chinois" class="portrait_chinois">
+            <p class="section-kicker">04 <span>/</span> EN QUELQUES IMAGES</p>
+            <h2>Portrait chinois</h2>
+            <div class="portrait-grid" id="portrait-list">
+                <div class="portrait-item">
+                    <div class="portrait-icon">
+                        <span aria-hidden="true">01</span>
+                    </div>
+                    <p class="portrait-question">Une palette</p>
+                    <p class="portrait-answer">Noir et blanc : j’aime aller à l’essentiel et garder les idées claires.</p>
+                </div>
+
+                <div class="portrait-item">
+                    <div class="portrait-icon">
+                        <span aria-hidden="true">02</span>
+                    </div>
+                    <p class="portrait-question">Un personnage</p>
+                    <p class="portrait-answer">Orion, dans <em>Chuck</em> : un esprit brillant, discret, qui trouve souvent une issue là où on ne la voit pas.</p>
+                </div>
+
+                <div class="portrait-item">
+                    <div class="portrait-icon">
+                        <span aria-hidden="true">03</span>
+                    </div>
+                    <p class="portrait-question">Un sens</p>
+                    <p class="portrait-answer">L’ouïe. Écouter les autres aide à comprendre avant de se lancer.</p>
+                </div>
+
+                <div class="portrait-item">
+                    <div class="portrait-icon">
+                        <span aria-hidden="true">04</span>
+                    </div>
+                    <p class="portrait-question">Un animal</p>
+                    <p class="portrait-answer">Le renard : curieux, malin et toujours en train de chercher un autre chemin.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="influences" class="influences">
+            <p class="section-kicker">05 <span>/</span> MES RÉFÉRENCES</p>
+            <h2>Ce qui m’a donné envie</h2>
+            <p class="instruction">Trois influences, trois portes d’entrée vers la création.</p>
+
+            <div class="influences-grid" id="influences-list">
+                <div class="influence-card" role="button" tabindex="0" aria-pressed="false" aria-label="Découvrir l'influence de CyrilMp4">
+                    <div class="influence-front">
+                        <img src="/images/cyrilmp4.webp" alt="CyrilMp4">
+                        <h3>CyrilMp4</h3>
+                    </div>
+                    <div class="influence-back">
+                        <p>CyrilMp4 parle de cinéma et part tourner aux quatre coins du monde. Sa manière de travailler l’image m’a donné envie, moi aussi, de construire des vidéos plus soignées.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="influence-card" role="button" tabindex="0" aria-pressed="false" aria-label="Découvrir l'influence de Chuck">
+                    <div class="influence-front">
+                        <img src="/images/chuck.webp" alt="Série Chuck">
+                        <h3>Chuck</h3>
+                    </div>
+                    <div class="influence-back">
+                        <p><em>Chuck</em> a accompagné mon enfance et mon adolescence. Entre espionnage et informatique, la série a nourri mon envie de travailler dans ce domaine.</p>
+                    </div>
+                </div>
+
+                <div class="influence-card" role="button" tabindex="0" aria-pressed="false" aria-label="Découvrir l'influence de Free Fire">
+                    <div class="influence-front">
+                        <img src="/images/free-fire-logo.webp" alt="Free Fire">
+                        <h3>Free Fire</h3>
+                    </div>
+                    <div class="influence-back">
+                        <p><em>Free Fire</em> m’a accompagné pendant le confinement. C’est autour du jeu que j’ai commencé à publier mes montages sur YouTube — le début d’une aventure de plus de 120 vidéos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact">
+            <p class="section-kicker">06 <span>/</span> LA SUITE, ON LA FAIT À PLUSIEURS</p>
+            <h2>Un projet en tête ?</h2>
+            <p class="section-intro">Un projet web ou mobile, une idée à concrétiser ou simplement envie d’échanger ? Ma boîte mail est ouverte.</p>
+            <div class="contact-container">
+                <form action="mailto:camillesoret53@gmail.com" method="post" enctype="text/plain" class="formulaire" id="contact-form">
+                    <fieldset>
+                        <h3 class="form-title">Contactez-moi</h3>
+
+                        <div class="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="envoyer" value="Envoyer">
+                        </div>
+                    </fieldset>
+                    <p id="contact-status" class="info-text" aria-live="polite"></p>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Écris-moi</h3>
+                    <p class="info-text"><a data-contact-email href="mailto:camillesoret53@gmail.com">camillesoret53@gmail.com</a></p>
+
+                    <h3>Téléphone :</h3>
+                    <p class="info-text" data-site="phone">07 67 99 54 91</p>
+
+                    <p class="contact-note" data-site="contactNote">Je réponds dès que possible. Au plaisir d’échanger autour de ton projet.</p>
+                    <p class="info-text"><a data-contact-youtube href="https://www.youtube.com/@FF_DrazoxYT">Ma chaîne YouTube</a></p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Camille SORET - Tous droits réservés</p>
+        <p><a href="/admin/">Administration</a></p>
+    </footer>
+
+    <script src="/scripts/site.js" defer></script>
+    <script src="/scripts/site-content.js" defer></script>
+    <script src="/scripts/project-url.js" defer></script>
+    <script src="/scripts/accueil.js" defer></script>
+</body>
+
+</html>

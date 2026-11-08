@@ -1,0 +1,282 @@
+.admin-page {
+    width: min(100% - 2rem, 1040px);
+    margin: 3rem auto;
+}
+
+.admin-back {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.admin-panel {
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 2px solid var(--border);
+    background: var(--primary);
+    box-shadow: 8px 8px 0 var(--shadow);
+}
+
+.admin-panel h2 {
+    margin-top: 0;
+}
+
+.admin-panel form {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.admin-panel label {
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.admin-panel input,
+.admin-panel textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    background: var(--primary);
+    font: inherit;
+}
+
+.admin-panel input:focus,
+.admin-panel textarea:focus {
+    outline: none;
+    box-shadow: 4px 4px 0 var(--shadow);
+}
+
+.admin-panel input[type="file"] {
+    padding: 0.5rem;
+}
+
+.admin-panel .envoyer {
+    margin-top: 1rem;
+}
+
+.admin-panel-header,
+.admin-fields-row,
+.admin-subheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.admin-panel-header h2 {
+    margin: 0;
+}
+
+.admin-fields-row > div {
+    flex: 1;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.admin-secondary-button {
+    padding: 0.6rem 1rem;
+    border: 2px solid var(--border);
+    color: var(--text);
+    background: var(--primary);
+    font: inherit;
+    cursor: pointer;
+}
+
+.admin-project-list {
+    display: grid;
+    gap: 0.55rem;
+    max-height: 17rem;
+    overflow: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.admin-project-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 0.4rem;
+}
+
+.admin-project-select,
+.admin-order-button,
+.admin-danger-button {
+    padding: 0.55rem 0.8rem;
+    border: 1px solid var(--border);
+    color: var(--text);
+    background: var(--primary);
+    font: inherit;
+    cursor: pointer;
+}
+
+.admin-project-select {
+    text-align: left;
+}
+
+.admin-project-select[aria-current="true"],
+.admin-tab.active {
+    color: var(--primary);
+    background: var(--secondary);
+}
+
+.admin-order-button {
+    min-width: 2.5rem;
+}
+
+.admin-order-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.admin-danger-button {
+    color: #a12626;
+}
+
+.admin-tabs,
+.admin-content-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.admin-tab {
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--border);
+    color: var(--text);
+    background: var(--primary);
+    font: inherit;
+    cursor: pointer;
+}
+
+.admin-tab-panel {
+    padding-top: 0.5rem;
+}
+
+.admin-subheader {
+    margin: 1.5rem 0 1rem;
+}
+
+.admin-subheader h3,
+.admin-subheader h4,
+.admin-panel-header h2 {
+    margin: 0;
+}
+
+.admin-subheader p,
+.admin-panel-header p,
+.admin-help {
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.admin-link-row,
+.admin-form-actions {
+    display: flex;
+    align-items: end;
+    gap: 0.75rem;
+}
+
+.admin-link-row {
+    margin: 0.75rem 0;
+}
+
+.admin-link-row .admin-control {
+    flex: 1;
+}
+
+.admin-repeat-list,
+.admin-dynamic-form,
+.admin-control {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.admin-entry {
+    min-width: 0;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid var(--border);
+}
+
+.admin-entry legend {
+    padding: 0 0.4rem;
+    font-weight: 700;
+}
+
+.admin-control label {
+    display: grid;
+    gap: 0.4rem;
+    margin: 0;
+}
+
+.admin-color-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem 1rem;
+}
+
+.admin-color-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.admin-color-control input[type="color"] {
+    width: 3.2rem;
+    height: 2.5rem;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.admin-form-actions {
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.admin-form-actions .envoyer {
+    width: auto;
+    margin: 0;
+}
+
+.admin-status {
+    min-height: 1.5em;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.admin-status.error {
+    color: #b00020;
+}
+
+@media (max-width: 600px) {
+    .admin-page {
+        margin-top: 1.5rem;
+    }
+
+    .admin-panel {
+        padding: 1.25rem;
+    }
+
+    .admin-fields-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .admin-panel-header,
+    .admin-subheader,
+    .admin-link-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .admin-color-group {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-project-item {
+        grid-template-columns: minmax(0, 1fr) auto auto;
+    }
+}

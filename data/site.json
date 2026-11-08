@@ -1,0 +1,163 @@
+{
+  "profile": {
+    "name": "Camille SORET",
+    "kicker": "CAMILLE SORET · BUT MMI 3 · PARCOURS DÉVELOPPEMENT",
+    "headline": "Je conçois et développe\ndes expériences web.",
+    "cardSubtitle": "Étudiant en 3e année de BUT MMI",
+    "cardFocus": "Parcours développement",
+    "statement": "Du besoin à l’interface, puis jusqu’aux données.",
+    "biography": "Je m’appelle Camille, étudiant en troisième année de BUT Métiers du Multimédia et de l’Internet, parcours développement web. J’aime transformer une idée en produit concret : structurer les données, construire une interface claire et soigner ce qui se passe derrière. Mes projets m’ont fait pratiquer le développement web et mobile, en équipe comme en autonomie. J’ai abordé React, Laravel, Flutter et Symfony au fil de mes projets : certains outils me sont déjà familiers, d’autres sont encore en cours d’apprentissage.",
+    "traitsCaption": "Ma façon d’avancer, en cinq mots — choisis-en un"
+  },
+  "skills": [
+    {
+      "eyebrow": "01 / INTERFACES WEB",
+      "title": "Front-end",
+      "description": "Construire des interfaces accessibles et adaptatives, puis leur donner vie avec des interactions utiles.",
+      "tools": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React"
+      ]
+    },
+    {
+      "eyebrow": "02 / LOGIQUE SERVEUR",
+      "title": "Back-end & API",
+      "description": "Organiser la logique métier, relier les services et construire des applications côté serveur.",
+      "tools": [
+        "PHP",
+        "Laravel",
+        "Symfony",
+        "API REST"
+      ]
+    },
+    {
+      "eyebrow": "03 / APPLICATIONS MOBILES",
+      "title": "Développement mobile",
+      "description": "Découvrir les contraintes du mobile et penser des interfaces adaptées aux usages sur téléphone.",
+      "tools": [
+        "Flutter"
+      ]
+    },
+    {
+      "eyebrow": "04 / DONNÉES",
+      "title": "Bases de données",
+      "description": "Modéliser les données, les interroger et les faire circuler dans une application.",
+      "tools": [
+        "SQL"
+      ]
+    },
+    {
+      "eyebrow": "05 / QUALITÉ & OUTILS",
+      "title": "Du code au déploiement",
+      "description": "Suivre le code dans le temps, vérifier son comportement et préparer sa mise en ligne.",
+      "tools": [
+        "Git",
+        "Docker",
+        "Tests",
+        "Déploiement"
+      ]
+    },
+    {
+      "eyebrow": "06 / CONCEPTION",
+      "title": "Penser le produit",
+      "description": "Partir du besoin, réfléchir au parcours utilisateur et avancer avec une équipe vers une solution réalisable.",
+      "tools": [
+        "UX/UI",
+        "Gestion de projet",
+        "Travail d’équipe"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "label": "Assiduité",
+      "description": "Je suis assidu parce que j'aime mener chaque tâche à son terme avec rigueur et efficacité.",
+      "image": "assidu.svg"
+    },
+    {
+      "label": "Autonomie",
+      "description": "Je suis autonome car je sais organiser mon travail et trouver des solutions par moi-même.",
+      "image": "autonomie.svg"
+    },
+    {
+      "label": "Travail en équipe",
+      "description": "Je travaille bien en équipe grâce à ma capacité à communiquer, écouter et collaborer efficacement avec les autres.",
+      "image": "travail-equipe.svg"
+    },
+    {
+      "label": "Empathie",
+      "description": "Je suis empathique au travail car je prends le temps de comprendre les besoins et les sentiments des autres pour créer un environnement de collaboration harmonieux.",
+      "image": "empathique.svg"
+    },
+    {
+      "label": "Apprentissage",
+      "description": "J'ai acquis un savoir solide grâce à mon apprentissage continu et mon expérience pratique.",
+      "image": "livre.svg"
+    }
+  ],
+  "portrait": [
+    {
+      "question": "Une palette",
+      "answer": "Noir et blanc : j’aime aller à l’essentiel et garder les idées claires."
+    },
+    {
+      "question": "Un personnage",
+      "answer": "Orion, dans Chuck : un esprit brillant, discret, qui trouve souvent une issue là où on ne la voit pas."
+    },
+    {
+      "question": "Un sens",
+      "answer": "L’ouïe. Écouter les autres aide à comprendre avant de se lancer."
+    },
+    {
+      "question": "Un animal",
+      "answer": "Le renard : curieux, malin et toujours en train de chercher un autre chemin."
+    }
+  ],
+  "influences": [
+    {
+      "name": "CyrilMp4",
+      "image": "cyrilmp4.webp",
+      "description": "CyrilMp4 parle de cinéma et part tourner aux quatre coins du monde. Sa manière de travailler l’image m’a donné envie, moi aussi, de construire des vidéos plus soignées."
+    },
+    {
+      "name": "Chuck",
+      "image": "chuck.webp",
+      "description": "Chuck a accompagné mon enfance et mon adolescence. Entre espionnage et informatique, la série a nourri mon envie de travailler dans ce domaine."
+    },
+    {
+      "name": "Free Fire",
+      "image": "free-fire-logo.webp",
+      "description": "Free Fire m’a accompagné pendant le confinement. C’est autour du jeu que j’ai commencé à publier mes montages sur YouTube — le début d’une aventure de plus de 120 vidéos."
+    }
+  ],
+  "contact": {
+    "email": "camillesoret53@gmail.com",
+    "phone": "07 67 99 54 91",
+    "note": "Je réponds dès que possible. Au plaisir d’échanger autour de ton projet.",
+    "youtube": "https://www.youtube.com/@FF_DrazoxYT"
+  },
+  "theme": {
+    "light": {
+      "background": "#f3f1e9",
+      "text": "#252820",
+      "primary": "#fbfaf6",
+      "secondary": "#354639",
+      "accent": "#e8e7dc",
+      "border": "#343a31",
+      "shadow": "#778273",
+      "editorial": "#64745d"
+    },
+    "dark": {
+      "background": "#63e476",
+      "text": "#f1efe6",
+      "primary": "#292d28",
+      "secondary": "#d7ddcb",
+      "accent": "#353b33",
+      "border": "#c4c9ba",
+      "shadow": "#c20e9a",
+      "editorial": "#a9b89f"
+    }
+  }
+}

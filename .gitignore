@@ -1,0 +1,4 @@
+.env
+Thumbs.db
+*.tmp
+node_modules/

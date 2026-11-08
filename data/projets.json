@@ -1,0 +1,82 @@
+[
+  {
+    "image": "UrComunity.webp",
+    "name": "UrComunity",
+    "slug": "urcomunity",
+    "descriptionHtml": "UrComunity est né d’un projet de création mené en équipe pendant mon premier semestre de BUT MMI. L’objectif : imaginer un service de rencontre pensé pour créer des amitiés, et non des couples.<br><br>Nous avons posé les bases du projet de zéro : concept, personas, identité visuelle et plan de communication. Le principe imaginé est simple : découvrir des profils, échanger quelques minutes, puis décider ensemble si l’on souhaite poursuivre la conversation.<br><br>J’y ai découvert tout le travail qui se cache derrière une idée — et l’importance de construire un projet à plusieurs.",
+    "date": "Premier semestre de BUT MMI",
+    "technologies": [
+      "Marketing",
+      "Communication",
+      "Personas",
+      "Identité visuelle"
+    ],
+    "category": "Apps",
+    "type": "Social",
+    "summaryHtml": "Imaginer une application pour créer des amitiés : concept, personas, identité visuelle et communication, pensés en équipe."
+  },
+  {
+    "image": "youtube.webp",
+    "name": "Chaîne YouTube",
+    "slug": "chaine-youtube",
+    "descriptionHtml": "Le montage vidéo est ma première passion. En 2021, j’ai lancé ma chaîne pour partager des montages autour des jeux vidéo. J’ai appris en faisant : tester, couper, recommencer, puis publier.<br><br>Plus de 120 vidéos y sont passées. Je fais actuellement une pause pour me consacrer à mes études, mais cette chaîne reste une trace de mon évolution et de tout ce que j’ai appris en autodidacte.<br><br><a href=\"https://www.youtube.com/@FF_DrazoxYT\" target=\"_blank\" rel=\"noopener noreferrer\">Voir la chaîne YouTube ↗</a>",
+    "date": "Premières vidéos publiées en 2022 · chaîne lancée en 2021",
+    "technologies": [
+      "Projet personnel",
+      "Montage vidéo",
+      "CapCut",
+      "Communication"
+    ],
+    "category": "Personnelle",
+    "type": "Montage vidéo",
+    "summaryHtml": "Plus de 120 montages publiés en autodidacte : une première aventure vidéo autour du jeu et du montage."
+  },
+  {
+    "image": "nuit-info.svg",
+    "name": "Nuit de l'info",
+    "slug": "nuit-de-l-info",
+    "descriptionHtml": "La Nuit de l’Info rassemble des étudiants le temps d’une nuit pour créer un site ou une application autour d’un thème donné. En 2024, le sujet faisait dialoguer les océans et le corps humain.<br><br>Avec un ami, j’ai réalisé un CAPTCHA sous la forme d’un mini-jeu. Une nuit pour imaginer, construire et tester une expérience interactive, avec juste assez de café pour tenir jusqu’au matin.<br><br><a href=\"https://perso.univ-lemans.fr/~i2403161/\" target=\"_blank\" rel=\"noopener noreferrer\">Découvrir le projet ↗</a>",
+    "date": "Nuit du 5 au 6 décembre 2024 · 16 h 39 – 8 h 04",
+    "technologies": [
+      "Captcha",
+      "Développement",
+      "JavaScript",
+      "HTML/CSS"
+    ],
+    "category": "Développement",
+    "type": "Captcha",
+    "summaryHtml": "Une nuit pour créer un CAPTCHA sous forme de mini-jeu, en équipe, pendant l’édition 2024."
+  },
+  {
+    "image": "Wii.webp",
+    "name": "Cybershotman 2",
+    "slug": "cybershotman-2",
+    "descriptionHtml": "En terminale, dans l’option NSI, notre groupe a imaginé Cybershotman 2 : une suite au jeu mobile Cybershotman, pensée pour la Wii.<br><br>Mon rôle était du côté de l’image : j’ai dessiné les personnages sur Piskel, puis créé leurs mouvements sous forme de sprites. Un projet de plusieurs mois qui m’a permis de mêler jeu vidéo, animation et création graphique.<br><br><a href=\"https://drive.google.com/drive/folders/1Rw1VVjGO-WSqnK7rQqVezApwZDlOYMwL?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">Voir les sprites réalisés ↗</a>",
+    "date": "Terminale NSI · 2024 · projet réalisé sur 3 à 4 mois",
+    "technologies": [
+      "Jeu vidéo",
+      "Pixel art",
+      "Piskel",
+      "Animation"
+    ],
+    "category": "Jeu vidéo",
+    "type": "Sprites",
+    "summaryHtml": "Créer les personnages et leurs animations en sprites pour un jeu imaginé autour de la Wii."
+  },
+  {
+    "image": "Modulo.webp",
+    "name": "Modulo",
+    "slug": "modulo",
+    "descriptionHtml": "Modulo est un projet de groupe réalisé pendant le deuxième semestre de mon BUT MMI. Le brief : concevoir plusieurs quiz autour de la modification sonore et les relier à une base de données SQL.<br><br>Avec Eliot, nous avons imaginé un site où l’on reconnaît et analyse des transformations musicales à partir d’extraits. Pour aller plus loin, nous avons voulu permettre aux utilisateurs d’enrichir les quiz avec des morceaux de leur choix.<br><br>Un projet ambitieux qui m’a fait découvrir les liens entre interface, logique applicative et données.",
+    "date": "Deuxième semestre de BUT MMI",
+    "technologies": [
+      "Quiz",
+      "SQL",
+      "Interface web",
+      "Projet de groupe"
+    ],
+    "category": "Universitaire",
+    "type": "Site web",
+    "summaryHtml": "Des quiz pour explorer les transformations sonores, avec une base SQL et une idée : laisser chacun enrichir le jeu."
+  }
+]

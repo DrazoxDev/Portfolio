@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets web de Camille Soret | Portfolio développeur web</title>
+    <meta id="page-description" name="description" content="Découvrez les projets web, applications et expériences interactives de Camille Soret, étudiant en BUT MMI parcours développement web.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#f3f1e9">
+    <link id="canonical-url" rel="canonical" href="">
+    <meta id="og-title" property="og:title" content="Projets web de Camille Soret | Portfolio développeur web">
+    <meta id="og-description" property="og:description" content="Découvrez les projets web, applications et expériences interactives de Camille Soret, étudiant en BUT MMI parcours développement web.">
+    <meta id="og-url" property="og:url" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="fr_FR">
+    <meta id="og-image" property="og:image" content="/images/UrComunity.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="twitter-title" name="twitter:title" content="Projets web de Camille Soret | Portfolio développeur web">
+    <meta id="twitter-description" name="twitter:description" content="Découvrez les projets web, applications et expériences interactives de Camille Soret, étudiant en BUT MMI parcours développement web.">
+    <script id="portfolio-schema" type="application/ld+json">{}</script>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="light-mode body-projets">
+    <header class="header-projets">
+        <nav>
+            <div class="nav-container">
+                <a class="nom" href="/">Camille SORET</a>
+                <div class="nav-controls">
+                    <div class="theme-toggle-container">
+                        <label class="theme-toggle" for="themeToggle">
+                            <input type="checkbox" id="themeToggle" class="theme-checkbox">
+                            <span class="theme-slider">
+                                <span class="theme-icon sun">☀️</span>
+                                <span class="theme-icon moon">🌙</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li class="deroulant">
+                        <a href="/">Accueil ▼</a>
+                        <ul class="sous">
+                            <li>                            <a href="/#presentation">Présentation</a></li>
+                            <li><a href="/#competences_techniques">Compétences techniques</a></li>
+                            <li><a href="/#projets">Projets</a></li>
+                            <li><a href="/#portrait_chinois">Portrait chinois</a></li>
+                            <li><a href="/#influences">Influences</a></li>
+                            <li><a href="/#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="deroulant">
+                        <a href="projets.html">Projets ▼</a>
+                        <ul class="sous" id="projets-menu">
+                            <!-- Le menu des projets sera généré dynamiquement -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-projet">
+        <div class="projet-detail">
+            <div class="projet-header">
+                <p class="section-kicker">CARNET DE PROJETS <span>/</span> <span id="project-counter-label">01</span></p>
+                <h1 id="project-title">UrComunity</h1>
+                <div class="projet-navigation">
+                    <a href="/projets/urcomunity/" class="nav-btn prev" id="previous-project">
+                        <span class="nav-arrow">‹</span>
+                        <span>Précédent</span>
+                    </a>
+                    
+                    <div class="projet-counter">
+                        <span class="counter-text" id="project-counter">1 / 5</span>
+                    </div>
+                    
+                    <a href="/projets/chaine-youtube/" class="nav-btn next" id="next-project">
+                        <span>Suivant</span>
+                        <span class="nav-arrow">›</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="projet-content">
+                <div class="projet-image-container">
+                    <img src="/images/UrComunity.webp" alt="Projet UrComunity de Camille Soret" class="project-main-image" id="project-image">
+                </div>
+                
+                <div class="projet-info">
+                    <div class="projet-meta">
+                        <div class="date">
+                            <h3>Date</h3>
+                            <p id="project-date">Le contexte du projet est en cours de chargement.</p>
+                        </div>
+                        
+                        <div class="projet-tags">
+                            <h3>Technologies</h3>
+                            <ul class="tags-list">
+                                <li>Projet personnel</li>
+                                <li>Montage vidéo</li>
+                                <li>Passion</li>
+                                <li>Communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="projet-description">
+                        <h3>Description</h3>
+                        <p id="project-description">Lors de mon arrivée en MMI, nous avons été plongées dans des projets congrès afin de nous faire travailler le marketing, la communication, l'anglais. Pour cela, on nous a demandé de créer un projet de 0 et tout ce qu'a besoin d'un projet pour bien démarrer tel que les personas, le plan de communication, la charte graphique... Nous avons donc créé UrComunity qui est un projet de site de rencontre où l'on cherche à créer des amitiés et non des couples. Le concept est simple : swipe des profils jusqu'à en trouver un qui nous intéresse, discuté pendant 5 minutes avec celui-ci, choisir de continuer de discuter ou pas selon le ressenti des 2 personnes. Ce projet m'a permis de découvrir toute la complexité de penser un projet de 0, mais aussi de travailler en équipe, car celui-ci se réalisait en groupe.</p>
+                    </div>
+                    
+                    <div class="projet-actions">
+                        <a href="/#projets" class="btn-secondary">Retour aux projets</a>
+                                <a href="/#contact" class="btn-primary">Me contacter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projet-miniatures">
+                <p class="section-kicker">À EXPLORER AUSSI</p>
+                <h3>Autres projets</h3>
+                <div class="miniatures-grid" id="miniatures-grid">
+                    <!-- Les miniatures seront générées dynamiquement -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Camille SORET - Tous droits réservés</p>
+        <p><a href="/admin/">Administration</a></p>
+    </footer>
+
+    <script src="/scripts/site.js" defer></script>
+    <script src="/scripts/project-url.js" defer></script>
+    <script src="/scripts/projets.js" defer></script>
+</body>
+
+</html>

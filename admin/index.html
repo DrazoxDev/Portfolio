@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Administration - Camille SORET</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <main class="admin-page">
+        <a class="admin-back" href="../index.html">← Retour au portfolio</a>
+        <h1>Administration</h1>
+        <p>Gère les projets et les contenus du portfolio depuis cette page.</p>
+
+        <section id="login-panel" class="admin-panel">
+            <h2>Connexion</h2>
+            <form id="login-form">
+                <label for="password">Mot de passe administrateur</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" required>
+                <button class="envoyer" type="submit">Se connecter</button>
+            </form>
+        </section>
+
+        <section id="editor-panel" class="admin-panel" hidden>
+            <div class="admin-panel-header">
+                <div>
+                    <h2>Éditeur du portfolio</h2>
+                    <p>Les modifications sont publiées sur le site après enregistrement.</p>
+                </div>
+                <button id="logout-button" class="admin-secondary-button" type="button">Déconnexion</button>
+            </div>
+            <nav class="admin-tabs" aria-label="Administration">
+                <button type="button" class="admin-tab active" data-tab="projects">Projets</button>
+                <button type="button" class="admin-tab" data-tab="content">Contenus</button>
+                <button type="button" class="admin-tab" data-tab="design">Couleurs</button>
+            </nav>
+
+            <section class="admin-tab-panel" data-panel="projects">
+                <div class="admin-subheader">
+                    <div>
+                        <h3>Mes projets</h3>
+                        <p id="project-count"></p>
+                    </div>
+                    <button id="new-project" class="admin-secondary-button" type="button">+ Nouveau projet</button>
+                </div>
+                <ul id="project-list" class="admin-project-list"></ul>
+                <form id="project-form">
+                    <h3 id="project-form-title">Ajouter un projet</h3>
+                    <label for="name">Nom du projet</label>
+                    <input id="name" name="name" maxlength="120" required>
+
+                    <label for="image">Image (JPEG, PNG ou WebP, 5 Mo max.)</label>
+                    <input id="image" name="image" type="file" accept="image/jpeg,image/png,image/webp">
+                    <p id="image-help" class="admin-help">Une image est nécessaire pour un nouveau projet. Pour modifier, laisse ce champ vide afin de garder l’image actuelle.</p>
+
+                    <label for="date">Date ou période</label>
+                    <input id="date" name="date" maxlength="200" required>
+
+                    <div class="admin-fields-row">
+                        <div>
+                            <label for="category">Catégorie</label>
+                            <input id="category" name="category" maxlength="60" required>
+                        </div>
+                        <div>
+                            <label for="type">Type</label>
+                            <input id="type" name="type" maxlength="60" required>
+                        </div>
+                    </div>
+
+                    <label for="technologies">Technologies / tags (séparés par des virgules, 1 à 8)</label>
+                    <input id="technologies" name="technologies" maxlength="400" placeholder="JavaScript, HTML, CSS" required>
+
+                    <label for="summary">Résumé court</label>
+                    <textarea id="summary" name="summary" rows="3" maxlength="500" required></textarea>
+
+                    <label for="description">Description complète</label>
+                    <textarea id="description" name="description" rows="8" maxlength="10000" required></textarea>
+
+                    <div class="admin-subheader link-header">
+                        <div>
+                            <h4>Liens du projet</h4>
+                            <p>Les liens existants sont conservés lorsque tu modifies un projet.</p>
+                        </div>
+                        <button id="add-project-link" class="admin-secondary-button" type="button">+ Ajouter un lien</button>
+                    </div>
+                    <div id="project-links" class="admin-repeat-list"></div>
+                    <div class="admin-form-actions">
+                        <button class="envoyer" type="submit">Enregistrer le projet</button>
+                        <button id="cancel-project" class="admin-secondary-button" type="button" hidden>Annuler</button>
+                        <button id="delete-project" class="admin-danger-button" type="button" hidden>Supprimer ce projet</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="admin-tab-panel" data-panel="content" hidden>
+                <div class="admin-subheader">
+                    <div>
+                        <h3>Contenus du site</h3>
+                        <p>Choisis une section, modifie ses champs puis enregistre.</p>
+                    </div>
+                </div>
+                <nav id="content-tabs" class="admin-content-tabs" aria-label="Sections du site"></nav>
+                <form id="content-form" class="admin-dynamic-form">
+                    <div id="content-fields"></div>
+                    <div class="admin-form-actions">
+                        <button class="envoyer" type="submit">Enregistrer les contenus</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="admin-tab-panel" data-panel="design" hidden>
+                <div class="admin-subheader">
+                    <div>
+                        <h3>Palette de couleurs</h3>
+                        <p>Choisis les couleurs pour le thème clair et le thème sombre. Le site les applique automatiquement.</p>
+                    </div>
+                </div>
+                <form id="theme-form">
+                    <div id="theme-fields" class="admin-theme-grid"></div>
+                    <div class="admin-form-actions">
+                        <button class="envoyer" type="submit">Enregistrer les couleurs</button>
+                        <button id="reset-theme" class="admin-secondary-button" type="button">Rétablir la palette initiale</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+
+        <p id="admin-status" class="admin-status" role="status" aria-live="polite"></p>
+    </main>
+    <script src="../scripts/admin.js" defer></script>
+</body>
+</html>
