@@ -209,8 +209,28 @@ function setMetaContent(html, id, value) {
 }
 
 function replaceElementContents(html, id, content) {
-    const pattern = new RegExp(`(<([a-z][\\w-]*)\\b[^>]*\\bid="${id}"[^>]*>)[\\s\\S]*?(<\\/\\2\\s*>)`, "i");
-    return html.replace(pattern, (match, opening, tagName, closing) => `${opening}${content}${closing}`);
+    const openingPattern = new RegExp(`(<([a-z][\\w-]*)\\b[^>]*\\bid="${id}"[^>]*>)`, "i");
+    const openingMatch = openingPattern.exec(html);
+    if (!openingMatch) return html;
+
+    const openingEnd = openingMatch.index + openingMatch[1].length;
+    const tagPattern = new RegExp(`<\\/?${openingMatch[2]}\\b[^>]*>`, "gi");
+    tagPattern.lastIndex = openingEnd;
+    let depth = 1;
+    let tagMatch;
+
+    while ((tagMatch = tagPattern.exec(html))) {
+        if (/^<\//.test(tagMatch[0])) {
+            depth -= 1;
+            if (depth === 0) {
+                return `${html.slice(0, openingEnd)}${content}${html.slice(tagMatch.index)}`;
+            }
+        } else if (!/\/\s*>$/.test(tagMatch[0])) {
+            depth += 1;
+        }
+    }
+
+    return html;
 }
 
 function replaceDataSiteContents(html, key, content) {

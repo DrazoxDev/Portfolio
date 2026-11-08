@@ -150,13 +150,13 @@
       "editorial": "#64745d"
     },
     "dark": {
-      "background": "#63e476",
+      "background": "#20231f",
       "text": "#f1efe6",
       "primary": "#292d28",
       "secondary": "#d7ddcb",
       "accent": "#353b33",
       "border": "#c4c9ba",
-      "shadow": "#c20e9a",
+      "shadow": "#65715f",
       "editorial": "#a9b89f"
     }
   }
