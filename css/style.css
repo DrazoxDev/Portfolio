@@ -1354,14 +1354,25 @@ footer {
     }
     
     .projet-navigation {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        gap: 0.5rem;
     }
     
     .nav-btn {
-        width: 100%;
-        max-width: 200px;
+        flex: 1 1 0;
+        width: auto;
+        min-width: 0;
+        max-width: none;
         justify-content: center;
+        gap: 0.3rem;
+        padding: 0.65rem 0.45rem;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+
+    .projet-counter {
+        flex-shrink: 0;
+        padding: 0.45rem 0.6rem;
     }
     
     .projet-actions {
