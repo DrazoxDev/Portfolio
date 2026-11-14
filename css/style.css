@@ -6,7 +6,7 @@
     --gris-clair: #f0f0f0;
     --gris-moyen: #e0e0e0;
     --transition: all 0.3s ease;
-    --editorial: #64745d;
+    --editorial: var(--noir);
 }
 
 /* Light Mode (par défaut) */
@@ -1492,23 +1492,25 @@ textarea:focus {
 
 /* Portfolio editorial styling */
 .light-mode {
-    --background: #f3f1e9;
-    --text: #252820;
-    --primary: #fbfaf6;
-    --secondary: #354639;
-    --accent: #e8e7dc;
-    --border: #343a31;
-    --shadow: #778273;
+    --background: #ffffff;
+    --text: #000000;
+    --primary: #ffffff;
+    --secondary: #000000;
+    --accent: #f0f0f0;
+    --border: #000000;
+    --shadow: #000000;
+    --editorial: #000000;
 }
 
 .dark-mode {
-    --background: #20231f;
-    --text: #f1efe6;
-    --primary: #292d28;
-    --secondary: #d7ddcb;
-    --accent: #353b33;
-    --border: #c4c9ba;
-    --shadow: #65715f;
+    --background: #000000;
+    --text: #ffffff;
+    --primary: #111111;
+    --secondary: #ffffff;
+    --accent: #222222;
+    --border: #ffffff;
+    --shadow: #ffffff;
+    --editorial: #ffffff;
 }
 
 html {
@@ -1516,14 +1518,14 @@ html {
 }
 
 body {
-    background-image: radial-gradient(rgba(53, 70, 57, 0.045) 0.55px, transparent 0.55px);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.045) 0.55px, transparent 0.55px);
     background-size: 5px 5px;
 }
 
 header {
     padding: 0.85rem 0;
     border-bottom-width: 1px;
-    box-shadow: 0 3px 12px rgba(37, 40, 32, 0.07);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
 }
 
 .nom {
@@ -1535,7 +1537,7 @@ header {
     content: "✳";
     display: inline-block;
     margin-right: 0.65rem;
-    color: #64745d;
+    color: var(--editorial);
     font-size: 1rem;
 }
 
@@ -1569,12 +1571,12 @@ section h2::after {
     width: 58px;
     height: 2px;
     margin: 0.85rem auto 0;
-    background: #64745d;
+    background: var(--editorial);
 }
 
 .hero-kicker,
 .section-kicker {
-    color: #64745d;
+    color: var(--editorial);
     font-family: Arial, sans-serif;
     font-size: 0.7rem;
     font-weight: 700;
@@ -1589,7 +1591,7 @@ section h2::after {
 .hero-kicker span,
 .section-kicker span {
     padding: 0 0.35rem;
-    color: #a17452;
+    color: var(--editorial);
 }
 
 .presentation {
@@ -1664,8 +1666,8 @@ section h2::after {
     padding: clamp(1.5rem, 3vw, 2.5rem);
     background: var(--primary);
     border: 1px solid var(--border);
-    border-left: 4px solid #64745d;
-    box-shadow: 6px 6px 0 rgba(101, 113, 95, 0.22);
+    border-left: 4px solid var(--editorial);
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.22);
     text-align: left;
     line-height: 1.9;
 }
@@ -1742,9 +1744,9 @@ section h2::after {
     margin: 0 auto;
     padding: 0.95rem 1.25rem;
     border: 0;
-    border-left: 2px solid #a17452;
+    border-left: 2px solid var(--editorial);
     border-radius: 0;
-    background: rgba(251, 250, 246, 0.75);
+    background: var(--accent);
     font-size: 0.84rem;
     font-weight: 400;
 }
@@ -1769,7 +1771,7 @@ section h2::after {
     padding: 1.35rem 1.5rem;
     border: 1px solid var(--border);
     border-radius: 2px;
-    box-shadow: 4px 4px 0 rgba(101, 113, 95, 0.2);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .competence-item::before,
@@ -1779,7 +1781,7 @@ section h2::after {
 
 .competence-item:hover {
     transform: translateY(-3px);
-    box-shadow: 6px 6px 0 rgba(101, 113, 95, 0.3);
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .competence-header {
@@ -1808,7 +1810,7 @@ section h2::after {
 
 .progress-fill {
     border-radius: 0;
-    background: #64745d;
+    background: var(--editorial);
 }
 
 .competence-description {
@@ -1899,7 +1901,7 @@ section h2::after {
     display: inline-block;
     padding: 0.35rem 0.65rem;
     border: 0;
-    border-bottom: 1px solid #64745d;
+    border-bottom: 1px solid var(--editorial);
     border-radius: 0;
     background: transparent;
     font-family: Arial, sans-serif;
@@ -1922,7 +1924,7 @@ section h2::after {
 
 .portrait-item:hover {
     transform: translateY(-3px);
-    box-shadow: 5px 5px 0 rgba(101, 113, 95, 0.28);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.28);
 }
 
 .portrait-icon {
@@ -1959,7 +1961,7 @@ section h2::after {
 }
 
 .influence-card:hover {
-    box-shadow: 5px 5px 0 rgba(101, 113, 95, 0.28);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.28);
 }
 
 .influence-front img {
@@ -1984,7 +1986,7 @@ section h2::after {
 .contact-info {
     border: 1px solid var(--border);
     border-radius: 2px;
-    box-shadow: 5px 5px 0 rgba(101, 113, 95, 0.2);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .form-title {
@@ -2052,7 +2054,7 @@ footer a {
         border-top: 1px solid var(--border);
         border-bottom: 1px solid var(--border);
         background: var(--primary);
-        box-shadow: 0 5px 10px rgba(37, 40, 32, 0.08);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
     }
 
     .nav-menu.active {
@@ -2220,7 +2222,7 @@ footer a {
     position: absolute;
     right: 1rem;
     bottom: 0.55rem;
-    color: #64745d;
+    color: var(--editorial);
     font-family: Arial, sans-serif;
     font-size: 0.6rem;
     font-weight: 700;
@@ -2252,7 +2254,7 @@ footer a {
 
 .skill-index {
     margin-bottom: 1.15rem;
-    color: #64745d;
+    color: var(--editorial);
     font-family: Arial, sans-serif;
     font-size: 0.62rem;
     font-weight: 700;
@@ -2341,14 +2343,14 @@ footer a {
     height: 48px;
     margin: 0 0 1.25rem;
     border: 0;
-    border-bottom: 1px solid #64745d;
+    border-bottom: 1px solid var(--editorial);
     border-radius: 0;
     background: transparent;
     justify-content: flex-start;
 }
 
 .portrait-icon span {
-    color: #64745d;
+    color: var(--editorial);
     font-family: Arial, sans-serif;
     font-size: 0.8rem;
     font-weight: 700;
@@ -2366,7 +2368,7 @@ footer a {
 
 .influence-card {
     position: relative;
-    box-shadow: 4px 4px 0 rgba(101, 113, 95, 0.17);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.17);
 }
 
 .influence-front img {
@@ -2423,7 +2425,7 @@ footer a {
 
 .contact-info .info-text a {
     text-decoration: underline;
-    text-decoration-color: #64745d;
+    text-decoration-color: var(--editorial);
     text-underline-offset: 0.25em;
 }
 
@@ -2481,7 +2483,7 @@ footer a {
     border: 1px solid var(--border);
     border-radius: 2px;
     text-align: left;
-    box-shadow: 4px 4px 0 rgba(101, 113, 95, 0.17);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.17);
 }
 
 .miniature:hover {
@@ -2512,7 +2514,7 @@ footer a {
 .miniature > span {
     display: block;
     margin-bottom: 0.55rem;
-    color: #64745d;
+    color: var(--editorial);
     font-family: Arial, sans-serif;
     font-size: 0.62rem;
     font-weight: 700;

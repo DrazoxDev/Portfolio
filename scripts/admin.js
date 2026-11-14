@@ -20,16 +20,16 @@ const themeKeys = [
     ["accent", "Fond secondaire"],
     ["border", "Contours"],
     ["shadow", "Ombres"],
-    ["editorial", "Accent végétal"]
+    ["editorial", "Accent graphique"]
 ];
 const initialTheme = {
     light: {
-        background: "#f3f1e9", text: "#252820", primary: "#fbfaf6", secondary: "#354639",
-        accent: "#e8e7dc", border: "#343a31", shadow: "#778273", editorial: "#64745d"
+        background: "#ffffff", text: "#000000", primary: "#ffffff", secondary: "#000000",
+        accent: "#f0f0f0", border: "#000000", shadow: "#000000", editorial: "#000000"
     },
     dark: {
-        background: "#20231f", text: "#f1efe6", primary: "#292d28", secondary: "#d7ddcb",
-        accent: "#353b33", border: "#c4c9ba", shadow: "#65715f", editorial: "#a9b89f"
+        background: "#000000", text: "#ffffff", primary: "#111111", secondary: "#ffffff",
+        accent: "#222222", border: "#ffffff", shadow: "#ffffff", editorial: "#ffffff"
     }
 };
 let csrfToken = "";
